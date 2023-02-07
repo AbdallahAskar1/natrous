@@ -6,7 +6,6 @@
         padding:1.5rem 4rem;
         text-transform: uppercase;
         text-decoration: none;
-        color: gray;
         border-radius: 15rem;
         /* box-shadow:0 5px 0px 1px #0bf0c6; */
         transition: all .2s;
@@ -36,7 +35,15 @@
             background-color:white;
         }
     }
-    
+     
+    &--green{
+        color: $color-white;
+        background-color: $color-primary;
+
+        &::after {
+            background-color:$color-primary-light;
+        }
+    }
     &::after {
         content:'';
         display: inline-block;
@@ -55,7 +62,7 @@
         animation-fill-mode: backwards;
     }
 }
-.bth-text {
+.btn-text {
     &:link,
     &:visited {
         font-size: $default-font-size;

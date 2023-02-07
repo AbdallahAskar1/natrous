@@ -11,6 +11,23 @@
      rgba($color-primary-light,0.8),
      rgba($color-primary-dark,0.2)),
     url(../../img/nat-4.jpg);
-background-size: cover;
-background-position: top;
+    background-size: cover;
+    background-position: top;
+
+    transform: skewY(-7deg)  translateY(-8rem);
+    & > * {
+    transform: skewY(7deg);
+    }
+}
+
+.section-tours {
+    background-color: $color-gray-light-1;
+    padding:25rem 0 5rem 0;
+    margin-top: -16rem;
+}
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+    // background-color: $color-gray-light-1;
+
 }
