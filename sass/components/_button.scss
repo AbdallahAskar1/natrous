@@ -1,5 +1,5 @@
 .btn{
-
+    &,
     &:link,
     &:visited{
         display: inline-block;
@@ -10,6 +10,11 @@
         /* box-shadow:0 5px 0px 1px #0bf0c6; */
         transition: all .2s;
         position: relative;
+
+        //for the button element
+        border: none;
+        cursor: pointer;
+
     }
     &:hover{
         transform: translateY(-0.3rem);
@@ -21,7 +26,8 @@
         }
         
     }
-    &:active {
+    &:active,
+    &:focus {
         transform: translateY(-0.1rem);
         /* box-shadow:0 0px 0px 0px #2e3436 */
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
