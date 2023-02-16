@@ -347,8 +347,8 @@ body {
           border-bottom: 1px solid #eee; }
   .card__cta {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%); }
   .card__price-box {
     text-align: center;
@@ -389,9 +389,10 @@ body {
       filter: blur(1px) brightness(80%); }
   .story__caption {
     position: absolute;
-    top: 120%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    top: 120%;
     color: white;
     font-size: 1.7rem;
     text-align: center;
@@ -471,15 +472,15 @@ body {
   transform: translate(-1rem, 1rem); }
   .form__radio-button::after {
     content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     transition: all .3S;
     width: 65%;
     height: 65%;
     display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     border-radius: 5rem;
-    transform: translate(-50%, -50%);
     background-color: #55c57a;
     opacity: 0; }
 
@@ -488,6 +489,67 @@ body {
 
 .form__radio-input {
   visibility: hidden; }
+
+.popup {
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.849);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__container {
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+    display: table;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+  .popup:target .popup__container {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__left {
+    width: 33.33%;
+    display: table-cell;
+    vertical-align: middle; }
+  .popup__right {
+    width: 66.66%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #f7f7f7f7;
+    hyphens: auto; }
+  .popup__close:link, .popup__close:visited {
+    color: #3f3e3e;
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #55c57a; }
 
 .header {
   height: 95vh;
@@ -505,9 +567,10 @@ body {
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 40%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    top: 40%;
     text-align: center; }
 
 .navigation__checkbox {
@@ -551,8 +614,8 @@ body {
 .navigation__list {
   width: 100%;
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center; }

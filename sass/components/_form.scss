@@ -60,15 +60,12 @@
         
         &::after {
             content: "";
+            @include absoluteCenter;
             transition: all .3S;
             width: 65%;
             height: 65%;
             display: inline-block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
             border-radius: 5rem;
-            transform: translate(-50%,-50%);
             background-color:$color-primary;
             opacity: 0;
         }
