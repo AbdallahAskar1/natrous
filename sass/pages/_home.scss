@@ -1,7 +1,7 @@
 .section-about {
     background-color: $color-gray-light-1;
     padding:25rem 0 ;
-    margin-top: -20vh;
+    margin-top: -10vh;
 
     @include responsive(tab-port) {
         padding: 20rem 0;
