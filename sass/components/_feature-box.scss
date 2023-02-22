@@ -6,7 +6,18 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
     transition: transform .3s;
-    
+
+    @include responsive(tab-port) {
+        padding: 1.5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include responsive(phone) {
+        // padding: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+     
     
     &__icon {
         font-size: 6rem;
@@ -14,8 +25,8 @@
         background-image: linear-gradient(to right ,$color-primary-dark,$color-primary-light);
         color: transparent;
         background-clip: text;
-
         -webkit-background-clip:text;
+
     }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);

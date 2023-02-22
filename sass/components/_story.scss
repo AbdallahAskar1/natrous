@@ -1,5 +1,8 @@
 .story {
-    width: 75%;
+    width: 70%;
+    @include responsive(tab-port) {
+        width: 100%;
+    }
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black,.1);
     background-color: rgba($color-white,.5);

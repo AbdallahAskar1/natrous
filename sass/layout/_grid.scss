@@ -4,7 +4,15 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        @include responsive(tab-port) {
+            margin-bottom: $gutter-vertical-small;
+        }
     }
+    @include responsive(tab-port) {
+        max-width:50rem;
+        // padding: 0 3rem;
+    }
+    
     @include clearfix;
 
     [class^="col-"] {
@@ -12,9 +20,19 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
-     }
 
+            @include responsive(tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+
+            }
+     }
+        @include responsive(tab-port) {
+            width: 100% !important;
+            // padding: 2em 30em;
+        }
     }
+
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);

@@ -15,6 +15,11 @@
         box-shadow: 0 1rem 4rem rgba($color-black, .2);
         cursor: pointer;
 
+        @include responsive(phone) {
+        top: 3rem;
+
+        }
+
     }
     &__background {
         height: 6rem;
@@ -26,6 +31,10 @@
         background-image: radial-gradient($color-primary-light,$color-primary-dark);
         z-index: 200;
         transition: transform .5s;
+        @include responsive(phone) {
+            top: 3.5rem;
+    
+            }
 
     }
 
@@ -96,7 +105,7 @@
         &::before,
         &::after{
             width: 3rem;
-            height: 2.4px;
+            height: 2.2px;
             background-color: $color-gray-dark-3;
             display: inline-block;
         }
@@ -119,10 +128,10 @@
 
     }
     &__button:hover  &__icon::before{
-        top: -10px; 
+        top: -8px; 
     }
     &__button:hover  &__icon::after{
-        top: 10px; 
+        top: 8px; 
     }
     &__checkbox:checked + &__button &__icon {
         background-color: transparent;
