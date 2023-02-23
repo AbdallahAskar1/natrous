@@ -75,11 +75,26 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
+
               <img
-                src="img/nat-1-large.jpg"
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw ,(max-width:600px) 30vw,300px"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
-              /><img
+                 />
+              <img
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw ,(max-width:600px) 30vw,300px"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p2"
+               />
+            <img
+               srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+               sizes="(max-width:900px) 20vw ,(max-width:600px) 30vw,300px"
+               alt="Photo 1"
+               class="composition__photo composition__photo--p3"
+             />
+              <!-- <img
                 src="img/nat-2-large.jpg"
                 alt="Photo 2"
                 class="composition__photo composition__photo--p2"
@@ -87,7 +102,7 @@
                 src="img/nat-3-large.jpg"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -266,7 +281,7 @@
           <div class="story">
            <figure class="story__shape">
             <img src="img/nat-8.jpg" alt="person on a tour" class="story__img">
-            <figcaption class="story__caption">samiah</figcaption>
+            <figcaption class="story__caption">Esraa</figcaption>
            </figure>
            <div class="story__text">
             <h3 class="heading-tertiary u-margin-bottom-small">I had the bes week ever with my family
@@ -278,7 +293,7 @@
           <div class="story">
             <figure class="story__shape">
              <img src="img/nat-9.jpg" alt="person on a tour" class="story__img">
-             <figcaption class="story__caption">samiah</figcaption>
+             <figcaption class="story__caption">Abdallah</figcaption>
             </figure>
             <div class="story__text">
              <h3 class="heading-tertiary u-margin-bottom-small">I had the bes week ever with my family
@@ -297,7 +312,7 @@
             <div class="book__form">
               <form action="#" class="form">
                 <div class="u-center-text u-margin-bottom-big">
-                  <h2 class="heading-secondary">Most Popular tours</h2>
+                  <h2 class="heading-secondary">Start Booking Now </h2>
                 </div>
                     <div class="form__group">
                       <input type="text" class="form__input" id="fullname" placeholder="full name">
@@ -337,7 +352,11 @@
     </main>
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="./img/logo-green-2x.png" alt="logo" class="footer__logo">
+        <picture class="footer__logo">
+          <source srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x.png 2x" media="(max-width:37.5em)">
+          <img src="./img/logo-green-1x.png" alt="logo"> 
+        </picture>
+        <!-- <img srcset="./img/logo-green-2x.png 2x, ./img/logo-green-1x.png 1x" alt="logo" class="footer__logo"> -->
       </div>
       <div class="row">
         <div class="col-1-of-2">

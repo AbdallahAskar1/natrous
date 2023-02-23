@@ -1,10 +1,12 @@
 .section-about {
     background-color: $color-gray-light-1;
     padding:25rem 0 ;
-    margin-top: -10vh;
+    margin-top: -20vh;
 
     @include responsive(tab-port) {
         padding: 20rem 0;
+    margin-top: -10vh;
+
     }
 }
 
@@ -60,9 +62,22 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(black, .2);
 
+    @include responsive(tab-port) {
+    background-image:linear-gradient(to right, rgba($color-white,0.91) 0%, rgba($color-white,0.91) 100%), url("../../img/nat-10.jpg");
+
+    }
+
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include responsive(tab-land) {
+            width: 65%;
+        }
+        
+        @include responsive(tab-port) {
+            width: 100%;
+        }
 
     }
      

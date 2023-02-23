@@ -161,10 +161,11 @@ body {
 .section-about {
   background-color: #f7f7f7f7;
   padding: 25rem 0;
-  margin-top: -10vh; }
+  margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 20rem 0;
+      margin-top: -10vh; } }
 
 .section-features {
   padding: 20rem 0;
@@ -203,9 +204,18 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.91) 0%, rgba(255, 255, 255, 0.91) 100%), url("../../img/nat-10.jpg"); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -487,6 +497,9 @@ body {
   @media (max-width: 56.25em) {
     .story {
       width: 100%; } }
+  @media (max-width: 37.5em) {
+    .story {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -676,10 +689,10 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   @media (max-width: 56.25em) {
     .header {
-      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   @media (max-width: 37.5em) {
     .header {
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
